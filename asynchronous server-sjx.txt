@@ -1,0 +1,33 @@
+# asynchronous server
+
+class Server()
+{
+	server        # 服务端
+	ip,port       # 服务端对应的ip，端口号     
+ 	
+ 	data    	  # 服务端数据缓存
+
+	run()
+	{
+		# 绑定端口并监听
+
+		# 循环判断是否有新连接
+		while True:
+			# 一旦有新客户端连接，为新的TCP连接创建线程
+			server.accept()
+			start a new thread:
+				while True:
+					# 使用TCP协议进行数据传输
+					# 循环处理客户端请求
+					receive message from client
+					
+					# 将服务端资源data上锁，然后更新数据后解锁
+					lock data
+					update data，message
+					unlock data
+
+					send message to client
+	}
+
+
+}

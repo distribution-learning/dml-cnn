@@ -1,0 +1,38 @@
+# synchronous server
+
+class Server()
+{
+	server        # 服务端
+	ip,port       # 服务端对应的ip，端口号     
+ 	
+ 	data    	  # 服务端数据缓存
+
+	run()
+	{
+		# 绑定端口并监听数据
+		start a new thread:
+			# 循环监听并接受所有客户端传来的数据
+			while True:
+				if 收到所有已连接客户端的数据：
+					# 更新服务端数据
+					update data
+
+
+		# 循环判断是否有新连接
+		while True:
+			# 一旦有新客户端连接，为新的TCP连接创建线程
+			server.accept()
+			start a new thread:
+				while True:
+					# 使用TCP协议进行数据传输
+					# 循环处理客户端请求
+					receive message from client
+					
+					# 循环判断data是否更新
+					while True：
+						# 一旦data更新
+						send message to client
+						break
+	}
+
+}
